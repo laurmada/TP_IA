@@ -5,6 +5,7 @@ def main():
 
     ginasios = carregar_ginasios()
 
+    # debug 
     for ginasio in ginasios:
         print(ginasio.nome, ginasio.tipo)
         for pokemon in ginasio.pokemons:
