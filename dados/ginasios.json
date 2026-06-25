@@ -1,0 +1,458 @@
+[
+    {
+        "id": "1",
+        "nome": "ginasio de Pewter city",
+        "tipo": "pedra",
+        "pokemons": [
+            {
+                "id": "74",
+                "nome": "geodude",
+                "tipos": [
+                    "pedra",
+                    "terra"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 40,
+                    "ataque": 80,
+                    "defesa": 100,
+                    "ataque_especial": 30,
+                    "defesa_especial": 30,
+                    "velocidade": 20
+                }
+            },
+            {
+                "id": "95",
+                "nome": "onix",
+                "tipos": [
+                    "pedra",
+                    "terra"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 35,
+                    "ataque": 45,
+                    "defesa": 160,
+                    "ataque_especial": 30,
+                    "defesa_especial": 45,
+                    "velocidade": 70
+                }
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "nome": "ginasio de Cerulean city",
+        "tipo": "agua",
+        "pokemons": [
+            {
+                "id": "120",
+                "nome": "staryu",
+                "tipos": [
+                    "agua"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 30,
+                    "ataque": 45,
+                    "defesa": 55,
+                    "ataque_especial": 70,
+                    "defesa_especial": 55,
+                    "velocidade": 85
+                }
+            },
+            {
+                "id": "121",
+                "nome": "starmie",
+                "tipos": [
+                    "agua",
+                    "psiquico"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 60,
+                    "ataque": 75,
+                    "defesa": 85,
+                    "ataque_especial": 100,
+                    "defesa_especial": 85,
+                    "velocidade": 115
+                }
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "nome": "ginasio de Vermilion city",
+        "tipo": "eletrico",
+        "pokemons": [
+            {
+                "id": "100",
+                "nome": "voltorb",
+                "tipos": [
+                    "eletrico"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 40,
+                    "ataque": 30,
+                    "defesa": 50,
+                    "ataque_especial": 55,
+                    "defesa_especial": 55,
+                    "velocidade": 100
+                }
+            },
+            {
+                "id": "25",
+                "nome": "pikachu",
+                "tipos": [
+                    "eletrico"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 35,
+                    "ataque": 55,
+                    "defesa": 40,
+                    "ataque_especial": 50,
+                    "defesa_especial": 50,
+                    "velocidade": 90
+                }
+            },
+            {
+                "id": "26",
+                "nome": "raichu",
+                "tipos": [
+                    "eletrico"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 60,
+                    "ataque": 90,
+                    "defesa": 55,
+                    "ataque_especial": 90,
+                    "defesa_especial": 80,
+                    "velocidade": 110
+                }
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "nome": "ginasio de Celadon city",
+        "tipo": "planta",
+        "pokemons": [
+            {
+                "id": "71",
+                "nome": "victreebel",
+                "tipos": [
+                    "planta",
+                    "venenoso"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 80,
+                    "ataque": 105,
+                    "defesa": 65,
+                    "ataque_especial": 100,
+                    "defesa_especial": 70,
+                    "velocidade": 70
+                }
+            },
+            {
+                "id": "114",
+                "nome": "tangela",
+                "tipos": [
+                    "planta"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 65,
+                    "ataque": 55,
+                    "defesa": 115,
+                    "ataque_especial": 100,
+                    "defesa_especial": 40,
+                    "velocidade": 60
+                }
+            },
+            {
+                "id": "45",
+                "nome": "vileplume",
+                "tipos": [
+                    "planta",
+                    "venenoso"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 75,
+                    "ataque": 80,
+                    "defesa": 85,
+                    "ataque_especial": 110,
+                    "defesa_especial": 90,
+                    "velocidade": 50
+                }
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "nome": "ginasio de Fuchsia city",
+        "tipo": "venenoso",
+        "pokemons": [
+            {
+                "id": "109",
+                "nome": "koffing",
+                "tipos": [
+                    "venenoso"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 40,
+                    "ataque": 65,
+                    "defesa": 95,
+                    "ataque_especial": 60,
+                    "defesa_especial": 45,
+                    "velocidade": 35
+                }
+            },
+            {
+                "id": "89",
+                "nome": "muk",
+                "tipos": [
+                    "venenoso"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 105,
+                    "ataque": 105,
+                    "defesa": 75,
+                    "ataque_especial": 65,
+                    "defesa_especial": 100,
+                    "velocidade": 50
+                }
+            },
+            {
+                "id": "110",
+                "nome": "weezing",
+                "tipos": [
+                    "venenoso"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 65,
+                    "ataque": 90,
+                    "defesa": 120,
+                    "ataque_especial": 85,
+                    "defesa_especial": 70,
+                    "velocidade": 60
+                }
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "nome": "ginasio de Saffron city",
+        "tipo": "psiquico",
+        "pokemons": [
+            {
+                "id": "64",
+                "nome": "kadabra",
+                "tipos": [
+                    "psiquico"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 40,
+                    "ataque": 35,
+                    "defesa": 30,
+                    "ataque_especial": 120,
+                    "defesa_especial": 70,
+                    "velocidade": 105
+                }
+            },
+            {
+                "id": "122",
+                "nome": "mr. mime",
+                "tipos": [
+                    "psiquico"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 40,
+                    "ataque": 45,
+                    "defesa": 65,
+                    "ataque_especial": 100,
+                    "defesa_especial": 120,
+                    "velocidade": 90
+                }
+            },
+            {
+                "id": "49",
+                "nome": "venomoth",
+                "tipos": [
+                    "inseto",
+                    "venenoso"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 70,
+                    "ataque": 65,
+                    "defesa": 60,
+                    "ataque_especial": 90,
+                    "defesa_especial": 75,
+                    "velocidade": 90
+                }
+            },
+            {
+                "id": "65",
+                "nome": "alakazam",
+                "tipos": [
+                    "psiquico"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 55,
+                    "ataque": 50,
+                    "defesa": 45,
+                    "ataque_especial": 135,
+                    "defesa_especial": 95,
+                    "velocidade": 120
+                }
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "nome": "ginasio de Cinnabar island",
+        "tipo": "fogo",
+        "pokemons": [
+            {
+                "id": "58",
+                "nome": "growlithe",
+                "tipos": [
+                    "fogo"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 55,
+                    "ataque": 70,
+                    "defesa": 45,
+                    "ataque_especial": 70,
+                    "defesa_especial": 50,
+                    "velocidade": 60
+                }
+            },
+            {
+                "id": "77",
+                "nome": "ponyta",
+                "tipos": [
+                    "fogo"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 50,
+                    "ataque": 85,
+                    "defesa": 55,
+                    "ataque_especial": 65,
+                    "defesa_especial": 65,
+                    "velocidade": 90
+                }
+            },
+            {
+                "id": "78",
+                "nome": "rapidash",
+                "tipos": [
+                    "fogo"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 65,
+                    "ataque": 100,
+                    "defesa": 70,
+                    "ataque_especial": 80,
+                    "defesa_especial": 80,
+                    "velocidade": 105
+                }
+            },
+            {
+                "id": "59",
+                "nome": "arcanine",
+                "tipos": [
+                    "fogo"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 90,
+                    "ataque": 110,
+                    "defesa": 80,
+                    "ataque_especial": 100,
+                    "defesa_especial": 80,
+                    "velocidade": 95
+                }
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "nome": "ginasio de Viridian city",
+        "tipo": "terra",
+        "pokemons": [
+            {
+                "id": "111",
+                "nome": "rhyhorn",
+                "tipos": [
+                    "terra",
+                    "pedra"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 80,
+                    "ataque": 85,
+                    "defesa": 95,
+                    "ataque_especial": 30,
+                    "defesa_especial": 30,
+                    "velocidade": 25
+                }
+            },
+            {
+                "id": "51",
+                "nome": "dugtrio",
+                "tipos": [
+                    "terra"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 35,
+                    "ataque": 80,
+                    "defesa": 50,
+                    "ataque_especial": 50,
+                    "defesa_especial": 70,
+                    "velocidade": 120
+                }
+            },
+            {
+                "id": "31",
+                "nome": "nidoqueen",
+                "tipos": [
+                    "venenoso",
+                    "terra"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 90,
+                    "ataque": 92,
+                    "defesa": 87,
+                    "ataque_especial": 75,
+                    "defesa_especial": 85,
+                    "velocidade": 76
+                }
+            },
+            {
+                "id": "34",
+                "nome": "nidoking",
+                "tipos": [
+                    "venenoso",
+                    "terra"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 81,
+                    "ataque": 102,
+                    "defesa": 77,
+                    "ataque_especial": 85,
+                    "defesa_especial": 75,
+                    "velocidade": 85
+                }
+            },
+            {
+                "id": "112",
+                "nome": "rhydon",
+                "tipos": [
+                    "terra",
+                    "pedra"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 105,
+                    "ataque": 130,
+                    "defesa": 120,
+                    "ataque_especial": 45,
+                    "defesa_especial": 45,
+                    "velocidade": 40
+                }
+            }
+        ]
+    }
+]
