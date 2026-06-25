@@ -1,5 +1,6 @@
 import json 
 import os
+import pyGAD
 from modelos import Pokemon, Ginasio
 
 # dicionario para deteminar quais pokemons sao fortes contra quais
@@ -34,11 +35,11 @@ def vantagem(pokemon_time, pokemon_ginasio):
 
 # calcula a vantage de tipo geral do time contra o time do ginasio   
 def calcular_vantagem(pokemon_time, pokemon_ginasio):
-    multiplicador = 1
+    valor_total = 0
     for tipo_atk in pokemon_time.tipos:
         for tipo_def in pokemon_ginasio.tipos:
-            multiplicador *= vantagem(tipo_atk, tipo_def)
-    return multiplicador
+            valor_total *= vantagem(tipo_atk, tipo_def)
+    return valor_total
 
 # carrega o json dos pokemons e armazena em uma lista
 def carregar_pokemons():
@@ -89,5 +90,6 @@ def carregar_ginasios():
         ginasios.append(ginasio)
 
     return ginasios
+
 
 
