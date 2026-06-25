@@ -1,6 +1,7 @@
 import json 
 import os
-import pyGAD
+import random
+#import pyGAD, USAR ESSA BIBLIOTECA PARA FACILITAR A IMPLEMENTACAO DO ALGORITMO GENETICO
 from modelos import Pokemon, Ginasio
 
 # dicionario para deteminar quais pokemons sao fortes contra quais
@@ -38,7 +39,7 @@ def calcular_vantagem(pokemon_time, pokemon_ginasio):
     valor_total = 0
     for tipo_atk in pokemon_time.tipos:
         for tipo_def in pokemon_ginasio.tipos:
-            valor_total *= vantagem(tipo_atk, tipo_def)
+            valor_total += vantagem(tipo_atk, tipo_def)
     return valor_total
 
 # carrega o json dos pokemons e armazena em uma lista
@@ -91,5 +92,10 @@ def carregar_ginasios():
 
     return ginasios
 
+# gera a quantidade de ginasios aleatorio ou permite um valor fixo
+def selecionar_ginasios(ginasios, quantidade):
+    if quantidade == 0:
+        return random.sample(ginasios, random.randint(1, len(ginasios)))
+    return random.sample(ginasios, min(quantidade, len(ginasios)))
 
 

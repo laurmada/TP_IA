@@ -1,4 +1,4 @@
-from funcoes import carregar_ginasios, carregar_pokemons
+from funcoes import *
 
 def main(): 
     pokemons = carregar_pokemons()
@@ -18,6 +18,9 @@ def main():
     for atributo, valor in pokemon.atributos.items():
         print(f"  {atributo}: {valor}")
     """
+    quantidade = int(input("Quantos ginásios? (0 para aleatório): "))
+    
+    ginasios_selecionados = selecionar_ginasios(ginasios, quantidade)
 
 if __name__ == "__main__":
     main()
