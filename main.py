@@ -22,5 +22,9 @@ def main():
     
     ginasios_selecionados = selecionar_ginasios(ginasios, quantidade)
 
+    print("\nGinásios selecionados:")
+    for ginasio in ginasios_selecionados:
+        print(f"  {ginasio.nome} — {ginasio.tipo}")
+
 if __name__ == "__main__":
     main()
