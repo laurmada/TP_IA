@@ -1,6 +1,7 @@
 import json 
 import os
 import random
+import pygad
 #import pyGAD, USAR ESSA BIBLIOTECA PARA FACILITAR A IMPLEMENTACAO DO ALGORITMO GENETICO
 from modelos import Pokemon, Ginasio
 
@@ -92,11 +93,37 @@ def vantagem(pokemon_time, pokemon_ginasio):
 
 # calcula a vantage de tipo geral do time contra o time do ginasio   
 def calcular_vantagem(pokemon_time, pokemon_ginasio):
-    valor_total = 0
+    valor_total = 1
     for tipo_atk in pokemon_time.tipos:
         for tipo_def in pokemon_ginasio.tipos:
-            valor_total *= vantagem(tipo_atk, tipo_def)
+            valor_total += vantagem(tipo_atk, tipo_def)
     return valor_total
+
+def penalidade_ginasio_descoberto(time, ginasios):
+    penalidade = 0
+
+    for ginasio in ginasios:
+        tem_vantagem = any(
+            vantagem(tipo_atk, ginasio.tipo) == 2
+            for pokemon in time
+            for tipo_atk in pokemon.tipos
+        )
+
+        if not tem_vantagem:
+            penalidade += 500
+
+    return penalidade
+
+def bonus_cobertura(time, ginasios):
+    cobertura = 0
+
+    for ginasio in ginasios:
+        for pokemon_ginasio in ginasio.pokemons:
+            for meu_pokemon in time:
+                if calcular_vantagem(meu_pokemon, pokemon_ginasio) > 1:
+                    cobertura += 1
+                    break
+    return cobertura * 100
 
 # define o poder total do pokemon
 def poder_pokemon(pokemon):
@@ -108,7 +135,7 @@ def dano_recebido(pokemon_atacante, pokemon_defensor, multiplicador_vantagem):
     ataque = pokemon_atacante.atributos["ataque"] + pokemon_atacante.atributos["ataque_especial"]
 
     defesa = pokemon_defensor.atributos["defesa"] + pokemon_defensor.atributos["defesa_especial"]
-    return (ataque / defesa) * multiplicador_vantagem * 100
+    return (ataque / defesa) * multiplicador_vantagem 
 
 # calcula o valor total de uma "batalha" de pokemon pra pokemon
 def valor_total_batalha(pokemon_time, pokemon_ginasio):
@@ -116,7 +143,7 @@ def valor_total_batalha(pokemon_time, pokemon_ginasio):
 
     vantagem_de_tipo_ginasio = calcular_vantagem(pokemon_ginasio, pokemon_time)
 
-    poder_time_gerado = poder_pokemon(pokemon_time) * vantagem_de_tipo_time_gerado
+    poder_time_gerado = poder_pokemon(pokemon_time) * vantagem_de_tipo_time_gerado * 2
 
     dano = dano_recebido(pokemon_ginasio, pokemon_time, vantagem_de_tipo_ginasio)
 
@@ -125,3 +152,103 @@ def valor_total_batalha(pokemon_time, pokemon_ginasio):
     if pontos_de_vida_restante <= 0:
         return -1000
     return poder_time_gerado + pontos_de_vida_restante
+
+def penalidade_lendarios(time):
+    lendarios = {"mewtwo", "mew", "articuno", "zapdos", "moltres"}
+    count = sum(1 for p in time if p.nome in lendarios)
+    return count * 200
+
+def score_time_vs_ginasio(time, ginasio):
+    score_total = 0
+    qtd_inimigos = len(ginasio.pokemons)
+    
+    # O seu time só vai usar a mesma quantidade de Pokémon que o líder possui
+    # Ex: Contra o Brock, usa apenas os 2 primeiros Pokémon do vetor 'time'
+    meu_subtime = time[:qtd_inimigos]
+    
+    for pokemon_ginasio in ginasio.pokemons:
+        for meu_pokemon in meu_subtime:
+            resultado_combate = valor_total_batalha(meu_pokemon, pokemon_ginasio)
+            
+            # Se alguém do subtime morrer, repassa o -1000
+            if resultado_combate == -1000:
+                return -1000
+                
+            score_total += resultado_combate
+            
+    return score_total / qtd_inimigos
+
+def executar_genetico(pokemons, ginasios):
+    def fitness_func(ga_instance, solution, solution_idx):
+        time = [pokemons[i] for i in solution]
+        
+        score_total = 0.0
+        
+        
+        for ginasio in ginasios:
+            score_ginasio = score_time_vs_ginasio(time, ginasio)
+            
+        
+            if score_ginasio == -1000:
+               
+                score_total -= 500  
+                break 
+            else:
+               
+                score_total += score_ginasio
+
+        
+        score_total += bonus_cobertura(time, ginasios)
+        score_total -= penalidade_lendarios(time)
+        score_total -= penalidade_ginasio_descoberto(time, ginasios)
+        
+        return float(score_total)
+
+    ga = pygad.GA(
+        num_generations=80,
+        num_parents_mating=5,
+        fitness_func=fitness_func,
+        sol_per_pop=50,
+        num_genes=6,
+        gene_type=int,
+        gene_space=range(0, len(pokemons)),
+        allow_duplicate_genes=False,
+        mutation_num_genes=4,
+    )
+
+    ga.run()
+    solution, fitness, _ = ga.best_solution()
+    time = [pokemons[i] for i in solution]
+    solution, solution_fitness, solution_idx = ga.best_solution()
+    melhor_time = [pokemons[i] for i in solution]
+    print(" RELATÓRIO DO MELHOR TIME ENCONTRADO")
+    for i, p in enumerate(melhor_time, 1):
+        print(f"  {i}. {p.nome} - Tipos: {p.tipos}")
+        
+        score_batalhas = 0
+        jornada_completa = True
+    for ginasio in ginasios:
+        score_ginasio = score_time_vs_ginasio(melhor_time, ginasio)
+        
+        if score_ginasio == -1000:
+            print(f" Ginásio {ginasio.nome} ({ginasio.tipo}): DERROTA! O time caiu aqui.")
+            jornada_completa = False
+            break
+        else:
+            print(f" Ginásio {ginasio.nome} ({ginasio.tipo}): VITÓRIA! Score obtido: {score_ginasio:.2f}")
+            score_batalhas += score_ginasio
+
+
+    print(" RESUMO DE BÔNUS E PENALIDADES:")
+
+
+    # Calculando os valores individualmente para exibir
+    valor_cobertura = bonus_cobertura(melhor_time, ginasios)
+    valor_lendarios = penalidade_lendarios(melhor_time)
+    valor_descoberto = penalidade_ginasio_descoberto(melhor_time, ginasios)
+
+    print(f" Bônus de Cobertura de Tipos:  +{valor_cobertura}")
+    print(f" Penalidade de Lendários:     -{valor_lendarios}")
+    print(f" Penalidade Tipos Descobertos:-{valor_descoberto}")
+
+    return time, fitness

@@ -35,6 +35,70 @@
                     "defesa_especial": 45,
                     "velocidade": 70
                 }
+            },
+            {
+                "id": 76,
+                "nome": "golem",
+                "tipos": [
+                    "pedra",
+                    "terra"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 80,
+                    "ataque": 120,
+                    "defesa": 130,
+                    "ataque_especial": 55,
+                    "defesa_especial": 65,
+                    "velocidade": 45
+                }
+            },
+            {
+                "id": 138,
+                "nome": "omanyte",
+                "tipos": [
+                    "pedra",
+                    "agua"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 35,
+                    "ataque": 40,
+                    "defesa": 100,
+                    "ataque_especial": 90,
+                    "defesa_especial": 55,
+                    "velocidade": 35
+                }
+            },
+            {
+                "id": 140,
+                "nome": "kabuto",
+                "tipos": [
+                    "pedra",
+                    "agua"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 30,
+                    "ataque": 80,
+                    "defesa": 90,
+                    "ataque_especial": 55,
+                    "defesa_especial": 45,
+                    "velocidade": 55
+                }
+            },
+            {
+                "id": 112,
+                "nome": "rhydon",
+                "tipos": [
+                    "terra",
+                    "pedra"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 105,
+                    "ataque": 130,
+                    "defesa": 120,
+                    "ataque_especial": 45,
+                    "defesa_especial": 45,
+                    "velocidade": 40
+                }
             }
         ]
     },
@@ -72,6 +136,67 @@
                     "ataque_especial": 100,
                     "defesa_especial": 85,
                     "velocidade": 115
+                }
+            },
+            {
+                "id": 8,
+                "nome": "wartortle",
+                "tipos": [
+                    "agua"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 59,
+                    "ataque": 63,
+                    "defesa": 80,
+                    "ataque_especial": 65,
+                    "defesa_especial": 80,
+                    "velocidade": 58
+                }
+            },
+            {
+                "id": 61,
+                "nome": "poliwhirl",
+                "tipos": [
+                    "agua"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 65,
+                    "ataque": 65,
+                    "defesa": 65,
+                    "ataque_especial": 50,
+                    "defesa_especial": 50,
+                    "velocidade": 90
+                }
+            },
+            {
+                "id": 91,
+                "nome": "cloyster",
+                "tipos": [
+                    "agua",
+                    "gelo"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 50,
+                    "ataque": 95,
+                    "defesa": 180,
+                    "ataque_especial": 85,
+                    "defesa_especial": 45,
+                    "velocidade": 70
+                }
+            },
+            {
+                "id": 119,
+                "nome": "seaking",
+                "tipos": [
+                    "agua"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 80,
+                    "ataque": 92,
+                    "defesa": 65,
+                    "ataque_especial": 65,
+                    "defesa_especial": 80,
+                    "velocidade": 68
                 }
             }
         ]
@@ -125,19 +250,65 @@
                     "defesa_especial": 80,
                     "velocidade": 110
                 }
+            },
+            {
+                "id": 82,
+                "nome": "magneton",
+                "tipos": [
+                    "eletrico",
+                    "aco"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 50,
+                    "ataque": 60,
+                    "defesa": 95,
+                    "ataque_especial": 120,
+                    "defesa_especial": 70,
+                    "velocidade": 70
+                }
+            },
+            {
+                "id": 125,
+                "nome": "electabuzz",
+                "tipos": [
+                    "eletrico"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 65,
+                    "ataque": 83,
+                    "defesa": 57,
+                    "ataque_especial": 95,
+                    "defesa_especial": 85,
+                    "velocidade": 105
+                }
+            },
+            {
+                "id": 100,
+                "nome": "voltorb",
+                "tipos": [
+                    "eletrico"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 40,
+                    "ataque": 30,
+                    "defesa": 50,
+                    "ataque_especial": 55,
+                    "defesa_especial": 55,
+                    "velocidade": 100
+                }
             }
         ]
     },
     {
         "id": "4",
         "nome": "ginasio de Celadon city",
-        "tipo": "planta",
+        "tipo": "grama",
         "pokemons": [
             {
                 "id": "71",
                 "nome": "victreebel",
                 "tipos": [
-                    "planta",
+                    "grama",
                     "venenoso"
                 ],
                 "atributos": {
@@ -153,7 +324,7 @@
                 "id": "114",
                 "nome": "tangela",
                 "tipos": [
-                    "planta"
+                    "grama"
                 ],
                 "atributos": {
                     "pontos_de_vida": 65,
@@ -168,7 +339,7 @@
                 "id": "45",
                 "nome": "vileplume",
                 "tipos": [
-                    "planta",
+                    "grama",
                     "venenoso"
                 ],
                 "atributos": {
@@ -178,6 +349,54 @@
                     "ataque_especial": 110,
                     "defesa_especial": 90,
                     "velocidade": 50
+                }
+            },
+            {
+                "id": 46,
+                "nome": "paras",
+                "tipos": [
+                    "inseto",
+                    "grama"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 35,
+                    "ataque": 70,
+                    "defesa": 55,
+                    "ataque_especial": 45,
+                    "defesa_especial": 55,
+                    "velocidade": 25
+                }
+            },
+            {
+                "id": 69,
+                "nome": "bellsprout",
+                "tipos": [
+                    "grama",
+                    "veneno"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 50,
+                    "ataque": 75,
+                    "defesa": 35,
+                    "ataque_especial": 70,
+                    "defesa_especial": 30,
+                    "velocidade": 40
+                }
+            },
+            {
+                "id": 102,
+                "nome": "exeggcute",
+                "tipos": [
+                    "grama",
+                    "psiquico"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 60,
+                    "ataque": 40,
+                    "defesa": 80,
+                    "ataque_especial": 60,
+                    "defesa_especial": 45,
+                    "velocidade": 40
                 }
             }
         ]
@@ -191,7 +410,7 @@
                 "id": "109",
                 "nome": "koffing",
                 "tipos": [
-                    "venenoso"
+                    "veneno"
                 ],
                 "atributos": {
                     "pontos_de_vida": 40,
@@ -206,7 +425,7 @@
                 "id": "89",
                 "nome": "muk",
                 "tipos": [
-                    "venenoso"
+                    "veneno"
                 ],
                 "atributos": {
                     "pontos_de_vida": 105,
@@ -221,7 +440,7 @@
                 "id": "110",
                 "nome": "weezing",
                 "tipos": [
-                    "venenoso"
+                    "veneno"
                 ],
                 "atributos": {
                     "pontos_de_vida": 65,
@@ -231,7 +450,52 @@
                     "defesa_especial": 70,
                     "velocidade": 60
                 }
-            }
+            },
+            {
+                "id": 31,
+                "nome": "nidoqueen",
+                "tipos": [
+                    "veneno",
+                    "terra"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 90,
+                    "ataque": 92,
+                    "defesa": 87,
+                    "ataque_especial": 75,
+                    "defesa_especial": 85,
+                    "velocidade": 76
+                }
+            },  {
+                "id": 88,
+                "nome": "grimer",
+                "tipos": [
+                    "veneno"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 80,
+                    "ataque": 80,
+                    "defesa": 50,
+                    "ataque_especial": 40,
+                    "defesa_especial": 50,
+                    "velocidade": 25
+                }
+            },
+            {
+                "id": 23,
+                "nome": "ekans",
+                "tipos": [
+                    "veneno"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 35,
+                    "ataque": 60,
+                    "defesa": 44,
+                    "ataque_especial": 40,
+                    "defesa_especial": 54,
+                    "velocidade": 55
+                }
+            }     
         ]
     },
     {
@@ -366,6 +630,36 @@
                     "defesa_especial": 80,
                     "velocidade": 95
                 }
+            },
+            {
+                "id": 5,
+                "nome": "Charmeleon",
+                "tipos": [
+                    "Fogo"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 58,
+                    "ataque": 64,
+                    "defesa": 58,
+                    "ataque_especial": 80,
+                    "defesa_especial": 65,
+                    "velocidade": 80
+                }
+            },
+            {
+                "id": 136,
+                "nome": "flareon",
+                "tipos": [
+                    "fogo"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 65,
+                    "ataque": 130,
+                    "defesa": 60,
+                    "ataque_especial": 95,
+                    "defesa_especial": 110,
+                    "velocidade": 65
+                }
             }
         ]
     },
@@ -451,6 +745,21 @@
                     "ataque_especial": 45,
                     "defesa_especial": 45,
                     "velocidade": 40
+                }
+            },
+            {
+                "id": 104,
+                "nome": "cubone",
+                "tipos": [
+                    "terra"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 50,
+                    "ataque": 50,
+                    "defesa": 95,
+                    "ataque_especial": 40,
+                    "defesa_especial": 50,
+                    "velocidade": 35
                 }
             }
         ]

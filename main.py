@@ -25,6 +25,15 @@ def main():
     print("\nGinásios selecionados:")
     for ginasio in ginasios_selecionados:
         print(f"  {ginasio.nome} — {ginasio.tipo}")
+    
+    time, fitness = executar_genetico(pokemons, ginasios_selecionados)
+
+    print("\nMelhor time gerado:")
+    for pokemon in time:
+        print(f"  {pokemon.nome} — {pokemon.tipos}")
+
+    print(f"\nFitness: {fitness}")
+
 
 if __name__ == "__main__":
     main()

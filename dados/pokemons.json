@@ -7,7 +7,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 45,
+      "pontos_de_vida": 45,
       "ataque": 49,
       "defesa": 49,
       "ataque_especial": 65,
@@ -23,7 +23,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 60,
+      "pontos_de_vida": 60,
       "ataque": 62,
       "defesa": 63,
       "ataque_especial": 80,
@@ -39,7 +39,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 80,
+      "pontos_de_vida": 80,
       "ataque": 82,
       "defesa": 83,
       "ataque_especial": 100,
@@ -54,7 +54,7 @@
       "fogo"
     ],
     "atributos": {
-      "hp": 39,
+      "pontos_de_vida": 39,
       "ataque": 52,
       "defesa": 43,
       "ataque_especial": 60,
@@ -69,7 +69,7 @@
       "fogo"
     ],
     "atributos": {
-      "hp": 58,
+      "pontos_de_vida": 58,
       "ataque": 64,
       "defesa": 58,
       "ataque_especial": 80,
@@ -85,7 +85,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 78,
+      "pontos_de_vida": 78,
       "ataque": 84,
       "defesa": 78,
       "ataque_especial": 109,
@@ -100,7 +100,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 44,
+      "pontos_de_vida": 44,
       "ataque": 48,
       "defesa": 65,
       "ataque_especial": 50,
@@ -115,7 +115,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 59,
+      "pontos_de_vida": 59,
       "ataque": 63,
       "defesa": 80,
       "ataque_especial": 65,
@@ -130,7 +130,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 79,
+      "pontos_de_vida": 79,
       "ataque": 83,
       "defesa": 100,
       "ataque_especial": 85,
@@ -145,7 +145,7 @@
       "inseto"
     ],
     "atributos": {
-      "hp": 45,
+      "pontos_de_vida": 45,
       "ataque": 30,
       "defesa": 35,
       "ataque_especial": 20,
@@ -160,7 +160,7 @@
       "inseto"
     ],
     "atributos": {
-      "hp": 50,
+      "pontos_de_vida": 50,
       "ataque": 20,
       "defesa": 55,
       "ataque_especial": 25,
@@ -176,7 +176,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 60,
+      "pontos_de_vida": 60,
       "ataque": 45,
       "defesa": 50,
       "ataque_especial": 90,
@@ -192,7 +192,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 40,
+      "pontos_de_vida": 40,
       "ataque": 35,
       "defesa": 30,
       "ataque_especial": 20,
@@ -208,7 +208,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 45,
+      "pontos_de_vida": 45,
       "ataque": 25,
       "defesa": 50,
       "ataque_especial": 25,
@@ -224,7 +224,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 90,
       "defesa": 40,
       "ataque_especial": 45,
@@ -240,7 +240,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 40,
+      "pontos_de_vida": 40,
       "ataque": 45,
       "defesa": 40,
       "ataque_especial": 35,
@@ -256,7 +256,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 63,
+      "pontos_de_vida": 63,
       "ataque": 60,
       "defesa": 55,
       "ataque_especial": 50,
@@ -272,7 +272,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 83,
+      "pontos_de_vida": 83,
       "ataque": 80,
       "defesa": 75,
       "ataque_especial": 70,
@@ -287,7 +287,7 @@
       "normal"
     ],
     "atributos": {
-      "hp": 30,
+      "pontos_de_vida": 30,
       "ataque": 56,
       "defesa": 35,
       "ataque_especial": 25,
@@ -302,7 +302,7 @@
       "normal"
     ],
     "atributos": {
-      "hp": 55,
+      "pontos_de_vida": 55,
       "ataque": 81,
       "defesa": 60,
       "ataque_especial": 50,
@@ -318,7 +318,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 40,
+      "pontos_de_vida": 40,
       "ataque": 60,
       "defesa": 30,
       "ataque_especial": 31,
@@ -334,7 +334,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 90,
       "defesa": 65,
       "ataque_especial": 61,
@@ -349,7 +349,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 35,
+      "pontos_de_vida": 35,
       "ataque": 60,
       "defesa": 44,
       "ataque_especial": 40,
@@ -364,7 +364,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 60,
+      "pontos_de_vida": 60,
       "ataque": 95,
       "defesa": 69,
       "ataque_especial": 65,
@@ -379,7 +379,7 @@
       "eletrico"
     ],
     "atributos": {
-      "hp": 35,
+      "pontos_de_vida": 35,
       "ataque": 55,
       "defesa": 40,
       "ataque_especial": 50,
@@ -394,7 +394,7 @@
       "eletrico"
     ],
     "atributos": {
-      "hp": 60,
+      "pontos_de_vida": 60,
       "ataque": 90,
       "defesa": 55,
       "ataque_especial": 90,
@@ -409,7 +409,7 @@
       "terra"
     ],
     "atributos": {
-      "hp": 50,
+      "pontos_de_vida": 50,
       "ataque": 75,
       "defesa": 85,
       "ataque_especial": 20,
@@ -424,7 +424,7 @@
       "terra"
     ],
     "atributos": {
-      "hp": 75,
+      "pontos_de_vida": 75,
       "ataque": 100,
       "defesa": 110,
       "ataque_especial": 45,
@@ -439,7 +439,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 55,
+      "pontos_de_vida": 55,
       "ataque": 47,
       "defesa": 52,
       "ataque_especial": 40,
@@ -454,7 +454,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 70,
+      "pontos_de_vida": 70,
       "ataque": 62,
       "defesa": 67,
       "ataque_especial": 55,
@@ -470,7 +470,7 @@
       "terra"
     ],
     "atributos": {
-      "hp": 90,
+      "pontos_de_vida": 90,
       "ataque": 92,
       "defesa": 87,
       "ataque_especial": 75,
@@ -485,7 +485,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 46,
+      "pontos_de_vida": 46,
       "ataque": 57,
       "defesa": 40,
       "ataque_especial": 40,
@@ -500,7 +500,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 61,
+      "pontos_de_vida": 61,
       "ataque": 72,
       "defesa": 57,
       "ataque_especial": 55,
@@ -516,7 +516,7 @@
       "terra"
     ],
     "atributos": {
-      "hp": 81,
+      "pontos_de_vida": 81,
       "ataque": 102,
       "defesa": 77,
       "ataque_especial": 85,
@@ -531,7 +531,7 @@
       "fada"
     ],
     "atributos": {
-      "hp": 70,
+      "pontos_de_vida": 70,
       "ataque": 45,
       "defesa": 48,
       "ataque_especial": 60,
@@ -546,7 +546,7 @@
       "fada"
     ],
     "atributos": {
-      "hp": 95,
+      "pontos_de_vida": 95,
       "ataque": 70,
       "defesa": 73,
       "ataque_especial": 95,
@@ -561,7 +561,7 @@
       "fogo"
     ],
     "atributos": {
-      "hp": 38,
+      "pontos_de_vida": 38,
       "ataque": 41,
       "defesa": 40,
       "ataque_especial": 50,
@@ -576,7 +576,7 @@
       "fogo"
     ],
     "atributos": {
-      "hp": 73,
+      "pontos_de_vida": 73,
       "ataque": 76,
       "defesa": 75,
       "ataque_especial": 81,
@@ -592,7 +592,7 @@
       "fada"
     ],
     "atributos": {
-      "hp": 115,
+      "pontos_de_vida": 115,
       "ataque": 45,
       "defesa": 20,
       "ataque_especial": 45,
@@ -608,7 +608,7 @@
       "fada"
     ],
     "atributos": {
-      "hp": 140,
+      "pontos_de_vida": 140,
       "ataque": 70,
       "defesa": 45,
       "ataque_especial": 85,
@@ -624,7 +624,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 40,
+      "pontos_de_vida": 40,
       "ataque": 45,
       "defesa": 35,
       "ataque_especial": 30,
@@ -640,7 +640,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 75,
+      "pontos_de_vida": 75,
       "ataque": 80,
       "defesa": 70,
       "ataque_especial": 65,
@@ -656,7 +656,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 45,
+      "pontos_de_vida": 45,
       "ataque": 50,
       "defesa": 55,
       "ataque_especial": 75,
@@ -672,7 +672,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 60,
+      "pontos_de_vida": 60,
       "ataque": 65,
       "defesa": 70,
       "ataque_especial": 85,
@@ -688,7 +688,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 75,
+      "pontos_de_vida": 75,
       "ataque": 80,
       "defesa": 85,
       "ataque_especial": 110,
@@ -704,7 +704,7 @@
       "grama"
     ],
     "atributos": {
-      "hp": 35,
+      "pontos_de_vida": 35,
       "ataque": 70,
       "defesa": 55,
       "ataque_especial": 45,
@@ -720,7 +720,7 @@
       "grama"
     ],
     "atributos": {
-      "hp": 60,
+      "pontos_de_vida": 60,
       "ataque": 95,
       "defesa": 80,
       "ataque_especial": 60,
@@ -736,7 +736,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 60,
+      "pontos_de_vida": 60,
       "ataque": 55,
       "defesa": 50,
       "ataque_especial": 40,
@@ -752,7 +752,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 70,
+      "pontos_de_vida": 70,
       "ataque": 65,
       "defesa": 60,
       "ataque_especial": 90,
@@ -767,7 +767,7 @@
       "terra"
     ],
     "atributos": {
-      "hp": 10,
+      "pontos_de_vida": 10,
       "ataque": 55,
       "defesa": 25,
       "ataque_especial": 35,
@@ -782,7 +782,7 @@
       "terra"
     ],
     "atributos": {
-      "hp": 35,
+      "pontos_de_vida": 35,
       "ataque": 100,
       "defesa": 50,
       "ataque_especial": 50,
@@ -797,7 +797,7 @@
       "normal"
     ],
     "atributos": {
-      "hp": 40,
+      "pontos_de_vida": 40,
       "ataque": 45,
       "defesa": 35,
       "ataque_especial": 40,
@@ -812,7 +812,7 @@
       "normal"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 70,
       "defesa": 60,
       "ataque_especial": 65,
@@ -827,7 +827,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 50,
+      "pontos_de_vida": 50,
       "ataque": 52,
       "defesa": 48,
       "ataque_especial": 65,
@@ -842,7 +842,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 80,
+      "pontos_de_vida": 80,
       "ataque": 82,
       "defesa": 78,
       "ataque_especial": 95,
@@ -857,7 +857,7 @@
       "lutador"
     ],
     "atributos": {
-      "hp": 40,
+      "pontos_de_vida": 40,
       "ataque": 80,
       "defesa": 35,
       "ataque_especial": 35,
@@ -872,7 +872,7 @@
       "lutador"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 105,
       "defesa": 60,
       "ataque_especial": 60,
@@ -887,7 +887,7 @@
       "fogo"
     ],
     "atributos": {
-      "hp": 55,
+      "pontos_de_vida": 55,
       "ataque": 70,
       "defesa": 45,
       "ataque_especial": 70,
@@ -902,7 +902,7 @@
       "fogo"
     ],
     "atributos": {
-      "hp": 90,
+      "pontos_de_vida": 90,
       "ataque": 110,
       "defesa": 80,
       "ataque_especial": 100,
@@ -917,7 +917,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 40,
+      "pontos_de_vida": 40,
       "ataque": 50,
       "defesa": 40,
       "ataque_especial": 40,
@@ -932,7 +932,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 65,
       "defesa": 65,
       "ataque_especial": 50,
@@ -948,7 +948,7 @@
       "lutador"
     ],
     "atributos": {
-      "hp": 90,
+      "pontos_de_vida": 90,
       "ataque": 95,
       "defesa": 95,
       "ataque_especial": 70,
@@ -963,7 +963,7 @@
       "psiquico"
     ],
     "atributos": {
-      "hp": 25,
+      "pontos_de_vida": 25,
       "ataque": 20,
       "defesa": 15,
       "ataque_especial": 105,
@@ -978,7 +978,7 @@
       "psiquico"
     ],
     "atributos": {
-      "hp": 40,
+      "pontos_de_vida": 40,
       "ataque": 35,
       "defesa": 30,
       "ataque_especial": 120,
@@ -993,7 +993,7 @@
       "psiquico"
     ],
     "atributos": {
-      "hp": 55,
+      "pontos_de_vida": 55,
       "ataque": 50,
       "defesa": 45,
       "ataque_especial": 135,
@@ -1008,7 +1008,7 @@
       "lutador"
     ],
     "atributos": {
-      "hp": 70,
+      "pontos_de_vida": 70,
       "ataque": 80,
       "defesa": 50,
       "ataque_especial": 35,
@@ -1023,7 +1023,7 @@
       "lutador"
     ],
     "atributos": {
-      "hp": 80,
+      "pontos_de_vida": 80,
       "ataque": 100,
       "defesa": 70,
       "ataque_especial": 50,
@@ -1038,7 +1038,7 @@
       "lutador"
     ],
     "atributos": {
-      "hp": 90,
+      "pontos_de_vida": 90,
       "ataque": 130,
       "defesa": 80,
       "ataque_especial": 65,
@@ -1054,7 +1054,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 50,
+      "pontos_de_vida": 50,
       "ataque": 75,
       "defesa": 35,
       "ataque_especial": 70,
@@ -1070,7 +1070,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 90,
       "defesa": 50,
       "ataque_especial": 85,
@@ -1086,7 +1086,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 80,
+      "pontos_de_vida": 80,
       "ataque": 105,
       "defesa": 65,
       "ataque_especial": 100,
@@ -1102,7 +1102,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 40,
+      "pontos_de_vida": 40,
       "ataque": 40,
       "defesa": 35,
       "ataque_especial": 50,
@@ -1118,7 +1118,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 80,
+      "pontos_de_vida": 80,
       "ataque": 70,
       "defesa": 65,
       "ataque_especial": 80,
@@ -1134,7 +1134,7 @@
       "terra"
     ],
     "atributos": {
-      "hp": 40,
+      "pontos_de_vida": 40,
       "ataque": 80,
       "defesa": 100,
       "ataque_especial": 30,
@@ -1150,7 +1150,7 @@
       "terra"
     ],
     "atributos": {
-      "hp": 55,
+      "pontos_de_vida": 55,
       "ataque": 95,
       "defesa": 115,
       "ataque_especial": 45,
@@ -1166,7 +1166,7 @@
       "terra"
     ],
     "atributos": {
-      "hp": 80,
+      "pontos_de_vida": 80,
       "ataque": 120,
       "defesa": 130,
       "ataque_especial": 55,
@@ -1181,7 +1181,7 @@
       "fogo"
     ],
     "atributos": {
-      "hp": 50,
+      "pontos_de_vida": 50,
       "ataque": 85,
       "defesa": 55,
       "ataque_especial": 65,
@@ -1196,7 +1196,7 @@
       "fogo"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 100,
       "defesa": 70,
       "ataque_especial": 80,
@@ -1212,7 +1212,7 @@
       "psiquico"
     ],
     "atributos": {
-      "hp": 90,
+      "pontos_de_vida": 90,
       "ataque": 65,
       "defesa": 65,
       "ataque_especial": 40,
@@ -1228,7 +1228,7 @@
       "psiquico"
     ],
     "atributos": {
-      "hp": 95,
+      "pontos_de_vida": 95,
       "ataque": 75,
       "defesa": 110,
       "ataque_especial": 100,
@@ -1244,7 +1244,7 @@
       "aco"
     ],
     "atributos": {
-      "hp": 25,
+      "pontos_de_vida": 25,
       "ataque": 35,
       "defesa": 70,
       "ataque_especial": 95,
@@ -1260,7 +1260,7 @@
       "aco"
     ],
     "atributos": {
-      "hp": 50,
+      "pontos_de_vida": 50,
       "ataque": 60,
       "defesa": 95,
       "ataque_especial": 120,
@@ -1276,7 +1276,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 52,
+      "pontos_de_vida": 52,
       "ataque": 90,
       "defesa": 55,
       "ataque_especial": 58,
@@ -1292,7 +1292,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 35,
+      "pontos_de_vida": 35,
       "ataque": 85,
       "defesa": 45,
       "ataque_especial": 35,
@@ -1308,7 +1308,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 60,
+      "pontos_de_vida": 60,
       "ataque": 110,
       "defesa": 70,
       "ataque_especial": 60,
@@ -1323,7 +1323,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 45,
       "defesa": 55,
       "ataque_especial": 45,
@@ -1339,7 +1339,7 @@
       "gelo"
     ],
     "atributos": {
-      "hp": 90,
+      "pontos_de_vida": 90,
       "ataque": 70,
       "defesa": 80,
       "ataque_especial": 70,
@@ -1354,7 +1354,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 80,
+      "pontos_de_vida": 80,
       "ataque": 80,
       "defesa": 50,
       "ataque_especial": 40,
@@ -1369,7 +1369,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 105,
+      "pontos_de_vida": 105,
       "ataque": 105,
       "defesa": 75,
       "ataque_especial": 65,
@@ -1384,7 +1384,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 30,
+      "pontos_de_vida": 30,
       "ataque": 65,
       "defesa": 100,
       "ataque_especial": 45,
@@ -1400,7 +1400,7 @@
       "gelo"
     ],
     "atributos": {
-      "hp": 50,
+      "pontos_de_vida": 50,
       "ataque": 95,
       "defesa": 180,
       "ataque_especial": 85,
@@ -1416,7 +1416,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 30,
+      "pontos_de_vida": 30,
       "ataque": 35,
       "defesa": 30,
       "ataque_especial": 100,
@@ -1432,7 +1432,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 45,
+      "pontos_de_vida": 45,
       "ataque": 50,
       "defesa": 45,
       "ataque_especial": 115,
@@ -1448,7 +1448,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 60,
+      "pontos_de_vida": 60,
       "ataque": 65,
       "defesa": 60,
       "ataque_especial": 130,
@@ -1464,7 +1464,7 @@
       "terra"
     ],
     "atributos": {
-      "hp": 35,
+      "pontos_de_vida": 35,
       "ataque": 45,
       "defesa": 160,
       "ataque_especial": 30,
@@ -1479,7 +1479,7 @@
       "psiquico"
     ],
     "atributos": {
-      "hp": 60,
+      "pontos_de_vida": 60,
       "ataque": 48,
       "defesa": 45,
       "ataque_especial": 43,
@@ -1494,7 +1494,7 @@
       "psiquico"
     ],
     "atributos": {
-      "hp": 85,
+      "pontos_de_vida": 85,
       "ataque": 73,
       "defesa": 70,
       "ataque_especial": 73,
@@ -1509,7 +1509,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 30,
+      "pontos_de_vida": 30,
       "ataque": 105,
       "defesa": 90,
       "ataque_especial": 25,
@@ -1524,7 +1524,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 55,
+      "pontos_de_vida": 55,
       "ataque": 130,
       "defesa": 115,
       "ataque_especial": 50,
@@ -1539,7 +1539,7 @@
       "eletrico"
     ],
     "atributos": {
-      "hp": 40,
+      "pontos_de_vida": 40,
       "ataque": 30,
       "defesa": 50,
       "ataque_especial": 55,
@@ -1554,7 +1554,7 @@
       "eletrico"
     ],
     "atributos": {
-      "hp": 60,
+      "pontos_de_vida": 60,
       "ataque": 50,
       "defesa": 70,
       "ataque_especial": 80,
@@ -1570,7 +1570,7 @@
       "psiquico"
     ],
     "atributos": {
-      "hp": 60,
+      "pontos_de_vida": 60,
       "ataque": 40,
       "defesa": 80,
       "ataque_especial": 60,
@@ -1586,7 +1586,7 @@
       "psiquico"
     ],
     "atributos": {
-      "hp": 95,
+      "pontos_de_vida": 95,
       "ataque": 95,
       "defesa": 85,
       "ataque_especial": 125,
@@ -1601,7 +1601,7 @@
       "terra"
     ],
     "atributos": {
-      "hp": 50,
+      "pontos_de_vida": 50,
       "ataque": 50,
       "defesa": 95,
       "ataque_especial": 40,
@@ -1616,7 +1616,7 @@
       "terra"
     ],
     "atributos": {
-      "hp": 60,
+      "pontos_de_vida": 60,
       "ataque": 80,
       "defesa": 110,
       "ataque_especial": 50,
@@ -1631,7 +1631,7 @@
       "lutador"
     ],
     "atributos": {
-      "hp": 50,
+      "pontos_de_vida": 50,
       "ataque": 120,
       "defesa": 53,
       "ataque_especial": 35,
@@ -1646,7 +1646,7 @@
       "lutador"
     ],
     "atributos": {
-      "hp": 50,
+      "pontos_de_vida": 50,
       "ataque": 105,
       "defesa": 79,
       "ataque_especial": 35,
@@ -1661,7 +1661,7 @@
       "normal"
     ],
     "atributos": {
-      "hp": 90,
+      "pontos_de_vida": 90,
       "ataque": 55,
       "defesa": 75,
       "ataque_especial": 60,
@@ -1676,7 +1676,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 40,
+      "pontos_de_vida": 40,
       "ataque": 65,
       "defesa": 95,
       "ataque_especial": 60,
@@ -1691,7 +1691,7 @@
       "veneno"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 90,
       "defesa": 120,
       "ataque_especial": 85,
@@ -1707,7 +1707,7 @@
       "pedra"
     ],
     "atributos": {
-      "hp": 80,
+      "pontos_de_vida": 80,
       "ataque": 85,
       "defesa": 95,
       "ataque_especial": 30,
@@ -1723,7 +1723,7 @@
       "pedra"
     ],
     "atributos": {
-      "hp": 105,
+      "pontos_de_vida": 105,
       "ataque": 130,
       "defesa": 120,
       "ataque_especial": 45,
@@ -1738,7 +1738,7 @@
       "normal"
     ],
     "atributos": {
-      "hp": 250,
+      "pontos_de_vida": 250,
       "ataque": 5,
       "defesa": 5,
       "ataque_especial": 35,
@@ -1753,7 +1753,7 @@
       "grama"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 55,
       "defesa": 115,
       "ataque_especial": 100,
@@ -1768,7 +1768,7 @@
       "normal"
     ],
     "atributos": {
-      "hp": 105,
+      "pontos_de_vida": 105,
       "ataque": 95,
       "defesa": 80,
       "ataque_especial": 40,
@@ -1783,7 +1783,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 30,
+      "pontos_de_vida": 30,
       "ataque": 40,
       "defesa": 70,
       "ataque_especial": 70,
@@ -1798,7 +1798,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 55,
+      "pontos_de_vida": 55,
       "ataque": 65,
       "defesa": 95,
       "ataque_especial": 95,
@@ -1813,7 +1813,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 45,
+      "pontos_de_vida": 45,
       "ataque": 67,
       "defesa": 60,
       "ataque_especial": 35,
@@ -1828,7 +1828,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 80,
+      "pontos_de_vida": 80,
       "ataque": 92,
       "defesa": 65,
       "ataque_especial": 65,
@@ -1843,7 +1843,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 30,
+      "pontos_de_vida": 30,
       "ataque": 45,
       "defesa": 55,
       "ataque_especial": 70,
@@ -1859,7 +1859,7 @@
       "psiquico"
     ],
     "atributos": {
-      "hp": 60,
+      "pontos_de_vida": 60,
       "ataque": 75,
       "defesa": 85,
       "ataque_especial": 100,
@@ -1875,7 +1875,7 @@
       "fada"
     ],
     "atributos": {
-      "hp": 40,
+      "pontos_de_vida": 40,
       "ataque": 45,
       "defesa": 65,
       "ataque_especial": 100,
@@ -1891,7 +1891,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 70,
+      "pontos_de_vida": 70,
       "ataque": 110,
       "defesa": 80,
       "ataque_especial": 55,
@@ -1907,7 +1907,7 @@
       "psiquico"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 50,
       "defesa": 35,
       "ataque_especial": 115,
@@ -1922,7 +1922,7 @@
       "eletrico"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 83,
       "defesa": 57,
       "ataque_especial": 95,
@@ -1937,7 +1937,7 @@
       "fogo"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 95,
       "defesa": 57,
       "ataque_especial": 100,
@@ -1952,7 +1952,7 @@
       "inseto"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 125,
       "defesa": 100,
       "ataque_especial": 55,
@@ -1967,7 +1967,7 @@
       "normal"
     ],
     "atributos": {
-      "hp": 75,
+      "pontos_de_vida": 75,
       "ataque": 100,
       "defesa": 95,
       "ataque_especial": 40,
@@ -1982,7 +1982,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 20,
+      "pontos_de_vida": 20,
       "ataque": 10,
       "defesa": 55,
       "ataque_especial": 15,
@@ -1998,7 +1998,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 95,
+      "pontos_de_vida": 95,
       "ataque": 125,
       "defesa": 79,
       "ataque_especial": 60,
@@ -2014,7 +2014,7 @@
       "gelo"
     ],
     "atributos": {
-      "hp": 130,
+      "pontos_de_vida": 130,
       "ataque": 85,
       "defesa": 80,
       "ataque_especial": 85,
@@ -2029,7 +2029,7 @@
       "normal"
     ],
     "atributos": {
-      "hp": 48,
+      "pontos_de_vida": 48,
       "ataque": 48,
       "defesa": 48,
       "ataque_especial": 48,
@@ -2044,7 +2044,7 @@
       "normal"
     ],
     "atributos": {
-      "hp": 55,
+      "pontos_de_vida": 55,
       "ataque": 55,
       "defesa": 50,
       "ataque_especial": 45,
@@ -2059,7 +2059,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 130,
+      "pontos_de_vida": 130,
       "ataque": 65,
       "defesa": 60,
       "ataque_especial": 110,
@@ -2074,7 +2074,7 @@
       "eletrico"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 65,
       "defesa": 60,
       "ataque_especial": 110,
@@ -2089,7 +2089,7 @@
       "fogo"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 130,
       "defesa": 60,
       "ataque_especial": 95,
@@ -2104,7 +2104,7 @@
       "normal"
     ],
     "atributos": {
-      "hp": 65,
+      "pontos_de_vida": 65,
       "ataque": 60,
       "defesa": 70,
       "ataque_especial": 85,
@@ -2120,7 +2120,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 35,
+      "pontos_de_vida": 35,
       "ataque": 40,
       "defesa": 100,
       "ataque_especial": 90,
@@ -2136,7 +2136,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 70,
+      "pontos_de_vida": 70,
       "ataque": 60,
       "defesa": 125,
       "ataque_especial": 115,
@@ -2152,7 +2152,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 30,
+      "pontos_de_vida": 30,
       "ataque": 80,
       "defesa": 90,
       "ataque_especial": 55,
@@ -2168,7 +2168,7 @@
       "agua"
     ],
     "atributos": {
-      "hp": 60,
+      "pontos_de_vida": 60,
       "ataque": 115,
       "defesa": 105,
       "ataque_especial": 65,
@@ -2184,7 +2184,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 80,
+      "pontos_de_vida": 80,
       "ataque": 105,
       "defesa": 65,
       "ataque_especial": 60,
@@ -2199,7 +2199,7 @@
       "normal"
     ],
     "atributos": {
-      "hp": 160,
+      "pontos_de_vida": 160,
       "ataque": 110,
       "defesa": 65,
       "ataque_especial": 65,
@@ -2215,7 +2215,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 90,
+      "pontos_de_vida": 90,
       "ataque": 85,
       "defesa": 100,
       "ataque_especial": 95,
@@ -2231,7 +2231,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 90,
+      "pontos_de_vida": 90,
       "ataque": 90,
       "defesa": 85,
       "ataque_especial": 125,
@@ -2247,7 +2247,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 90,
+      "pontos_de_vida": 90,
       "ataque": 100,
       "defesa": 90,
       "ataque_especial": 125,
@@ -2262,7 +2262,7 @@
       "dragon"
     ],
     "atributos": {
-      "hp": 41,
+      "pontos_de_vida": 41,
       "ataque": 64,
       "defesa": 45,
       "ataque_especial": 50,
@@ -2277,7 +2277,7 @@
       "dragon"
     ],
     "atributos": {
-      "hp": 61,
+      "pontos_de_vida": 61,
       "ataque": 84,
       "defesa": 65,
       "ataque_especial": 70,
@@ -2293,7 +2293,7 @@
       "voador"
     ],
     "atributos": {
-      "hp": 91,
+      "pontos_de_vida": 91,
       "ataque": 134,
       "defesa": 95,
       "ataque_especial": 100,
@@ -2308,7 +2308,7 @@
       "psiquico"
     ],
     "atributos": {
-      "hp": 106,
+      "pontos_de_vida": 106,
       "ataque": 110,
       "defesa": 90,
       "ataque_especial": 154,
@@ -2323,7 +2323,7 @@
       "psiquico"
     ],
     "atributos": {
-      "hp": 100,
+      "pontos_de_vida": 100,
       "ataque": 100,
       "defesa": 100,
       "ataque_especial": 100,
