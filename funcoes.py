@@ -1,7 +1,7 @@
 import json 
 import os
 import random
-#import pyGAD, USAR ESSA BIBLIOTECA PARA FACILITAR A IMPLEMENTACAO DO ALGORITMO GENETICO
+import pygad
 from modelos import Pokemon, Ginasio
 
 # dicionario para deteminar quais pokemons sao fortes contra quais
@@ -92,7 +92,7 @@ def vantagem(pokemon_time, pokemon_ginasio):
 
 # calcula a vantage de tipo geral do time contra o time do ginasio   
 def calcular_vantagem(pokemon_time, pokemon_ginasio):
-    valor_total = 0
+    valor_total = 1
     for tipo_atk in pokemon_time.tipos:
         for tipo_def in pokemon_ginasio.tipos:
             valor_total *= vantagem(tipo_atk, tipo_def)
@@ -120,8 +120,58 @@ def valor_total_batalha(pokemon_time, pokemon_ginasio):
 
     dano = dano_recebido(pokemon_ginasio, pokemon_time, vantagem_de_tipo_ginasio)
 
-    pontos_de_vida_restante = pokemon_time.atributos["pontos_de_vida"] - dano
+    pontos_de_vida_restante = pokemon_time.atributos["hp"] - dano
 
     if pontos_de_vida_restante <= 0:
         return -1000
     return poder_time_gerado + pontos_de_vida_restante
+
+###################################################
+#função que cria o time de pokemons baseado na solução do algoritmo genético
+def criar_time(solucao, pokemons):
+    time = []
+    for gene in solucao:
+        time.append(pokemons[gene])
+    return time
+
+
+# função que simula a batalha entre o time do jogador e o time do ginasio
+def batalha(time, ginasio):
+    pontos_time = 0
+    
+    for pokemon_time in time:
+        melhor = 0
+        for pokemon_inimigo in ginasio.pokemons:
+            valor = valor_total_batalha(
+                pokemon_time,
+                pokemon_inimigo
+            )
+            if valor > melhor:
+                melhor = valor
+        pontos_time += melhor
+    pontos_ginasio = 0
+
+    for pokemon in ginasio.pokemons:
+        pontos_ginasio += poder_pokemon(pokemon)
+
+    return max(0, pontos_time - pontos_ginasio)
+
+# função de fitness que será usada pelo algoritmo genético
+def calcular_fitness(
+        ga_instance,
+        solucao,
+        solucao_idx,
+        pokemons,
+        ginasios):
+    
+    time = criar_time(
+        solucao,
+        pokemons
+    )
+
+    pontuacao = 0
+    for ginasio in ginasios:
+        if batalha(time, ginasio):
+            pontuacao += random.uniform(0, 5)
+
+    return pontuacao
