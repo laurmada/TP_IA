@@ -79,9 +79,9 @@ def carregar_ginasios():
 # definine uma metrica para definir vitoria, empate ou derrota
 def resultado_provavel(score_time, score_ginasio):
     razao_metrica = score_time / score_ginasio if score_ginasio > 0 else 1
-    if razao_metrica >= 1.2:
+    if razao_metrica >= 1.05:
         return "Vitória"
-    elif razao_metrica >= 0.8:
+    elif razao_metrica >= 0.95:
         return "Empate"
     else:
         return "Derrota"
