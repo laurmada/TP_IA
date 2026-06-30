@@ -34,8 +34,14 @@ O objetivo é encontrar uma equipe equilibrada capaz de obter o melhor desempenh
 
 Antes de executar o projeto, é necessário possuir:
 
-## Python
+## Execução: 
 
+** Execução sem a interface: **
 ```bash
-Execução sem a interface: python main.py 
-Execução utilizando interface gráfica : python app.py
+python main.py
+```
+
+** Execução utilizando interface gráfica: **
+```bash
+python app.py
+```
