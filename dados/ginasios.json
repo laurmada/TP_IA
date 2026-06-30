@@ -564,6 +564,36 @@
                     "defesa_especial": 95,
                     "velocidade": 120
                 }
+            },
+            {
+                "id": 97,
+                "nome": "hypno",
+                "tipos": [
+                    "psiquico"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 85,
+                    "ataque": 73,
+                    "defesa": 70,
+                    "ataque_especial": 73,
+                    "defesa_especial": 115,
+                    "velocidade": 67
+                }
+            },
+            {
+                "id": 64,
+                "nome": "kadabra",
+                "tipos": [
+                    "psiquico"
+                ],
+                "atributos": {
+                    "pontos_de_vida": 40,
+                    "ataque": 35,
+                    "defesa": 30,
+                    "ataque_especial": 120,
+                    "defesa_especial": 70,
+                    "velocidade": 105
+                }
             }
         ]
     },

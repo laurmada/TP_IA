@@ -526,9 +526,9 @@
   },
   {
     "id": 35,
-    "nome": "clefada",
+    "nome": "clefairy",
     "tipos": [
-      "fada"
+      "normal"
     ],
     "atributos": {
       "pontos_de_vida": 70,
@@ -543,7 +543,7 @@
     "id": 36,
     "nome": "clefable",
     "tipos": [
-      "fada"
+      "normal"
     ],
     "atributos": {
       "pontos_de_vida": 95,
@@ -588,8 +588,7 @@
     "id": 39,
     "nome": "jigglypuff",
     "tipos": [
-      "normal",
-      "fada"
+      "normal"
     ],
     "atributos": {
       "pontos_de_vida": 115,
@@ -604,8 +603,7 @@
     "id": 40,
     "nome": "wigglytuff",
     "tipos": [
-      "normal",
-      "fada"
+      "normal"
     ],
     "atributos": {
       "pontos_de_vida": 140,
@@ -1871,8 +1869,7 @@
     "id": 122,
     "nome": "mr-mime",
     "tipos": [
-      "psiquico",
-      "fada"
+      "psiquico"
     ],
     "atributos": {
       "pontos_de_vida": 40,
@@ -2259,7 +2256,7 @@
     "id": 147,
     "nome": "dratini",
     "tipos": [
-      "dragon"
+      "dragao"
     ],
     "atributos": {
       "pontos_de_vida": 41,
@@ -2274,7 +2271,7 @@
     "id": 148,
     "nome": "dragonair",
     "tipos": [
-      "dragon"
+      "dragao"
     ],
     "atributos": {
       "pontos_de_vida": 61,
@@ -2287,9 +2284,9 @@
   },
   {
     "id": 149,
-    "nome": "dragonite",
+    "nome": "dragonaite",
     "tipos": [
-      "dragon",
+      "dragao",
       "voador"
     ],
     "atributos": {

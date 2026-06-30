@@ -76,15 +76,15 @@ def carregar_ginasios():
 
     return ginasios
 
+# definine uma metrica para definir vitoria, empate ou derrota
 def resultado_provavel(score_time, score_ginasio):
-    ratio = score_time / score_ginasio if score_ginasio > 0 else 1
-    if ratio >= 1.2:
+    razao_metrica = score_time / score_ginasio if score_ginasio > 0 else 1
+    if razao_metrica >= 1.2:
         return "Vitória"
-    elif ratio >= 0.8:
+    elif razao_metrica >= 0.8:
         return "Empate"
     else:
         return "Derrota"
-
 
 # gera a quantidade de ginasios aleatorio ou permite um valor fixo
 def selecionar_ginasios(ginasios, quantidade):
@@ -109,6 +109,7 @@ def calcular_vantagem(pokemon_time, pokemon_ginasio):
             valor_total *= vantagem(tipo_atk, tipo_def)
     return valor_total
 
+# define um bonus por cobertura de tipo 
 def bonus_cobertura(time, ginasios):
     cobertura = 0
 
@@ -148,11 +149,13 @@ def valor_total_batalha(pokemon_time, pokemon_ginasio):
         return -1000
     return poder_time_gerado + pontos_de_vida_restante
 
+# penalidade para evitar pokemos lendarios que sao mais fortes
 def penalidade_lendarios(time):
     lendarios = {"mewtwo", "mew", "articuno", "zapdos", "moltres"}
     count = sum(1 for p in time if p.nome in lendarios)
     return count * 2000
 
+# calcula o score total do time gerado contra um ginasio especifico
 def score_time_vs_ginasio(time, ginasio):
     score_total = 0
     quantidade_inimigos = len(ginasio.pokemons)
@@ -168,6 +171,7 @@ def score_time_vs_ginasio(time, ginasio):
 
     return score_total / quantidade_inimigos
 
+# calcula o poder total do ginasio da mesma forma q foi calculado para o time
 def poder_total_ginasio(time, ginasio):
     score_total = 0
     quantidade_pokemons_time = len(time)
@@ -187,8 +191,10 @@ def poder_total_ginasio(time, ginasio):
                 score_total += poder_ginasio + hp_ginasio_restante
 
     return score_total / quantidade_pokemons_time
-    
-def executar_genetico(pokemons, ginasios):
+
+# funcao que executa o algoritmo genetico 
+def executar_algoritmo_genetico(pokemons, ginasios):
+    # funcao q define o fitness do algoritmo genetico
     def fitness_func(ga_instance, solution, solution_idx):
         time = [pokemons[i] for i in solution]
         score_total = 0.0
@@ -214,7 +220,7 @@ def executar_genetico(pokemons, ginasios):
         gene_type=int,
         gene_space=range(0, len(pokemons)),
         allow_duplicate_genes=False,
-        mutation_num_genes=4,
+        mutation_num_genes=2,
     )
 
     ga.run()

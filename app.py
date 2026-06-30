@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 from funcoes import (
     carregar_pokemons, carregar_ginasios, selecionar_ginasios,
-    executar_genetico, score_time_vs_ginasio, poder_total_ginasio,
+    executar_algoritmo_genetico, score_time_vs_ginasio, poder_total_ginasio,
     resultado_provavel
 )
 
@@ -20,7 +20,7 @@ def gerar_time():
     quantidade = dados.get("quantidade", 0)
 
     ginasios_selecionados = selecionar_ginasios(ginasios, quantidade)
-    time, fitness = executar_genetico(pokemons, ginasios_selecionados)
+    time, fitness = executar_algoritmo_genetico(pokemons, ginasios_selecionados)
 
     ginasios_info = []
     for ginasio in ginasios_selecionados:

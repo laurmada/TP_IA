@@ -26,7 +26,7 @@ def main():
     for ginasio in ginasios_selecionados:
         print(f"  {ginasio.nome} — {ginasio.tipo}")
     
-    time, fitness = executar_genetico(pokemons, ginasios_selecionados)
+    time, fitness = executar_algoritmo_genetico(pokemons, ginasios_selecionados)
 
     print("\nMelhor time gerado:")
     for pokemon in time:
