@@ -32,7 +32,15 @@ O objetivo é encontrar uma equipe equilibrada capaz de obter o melhor desempenh
 
 # Pré-requisitos
 
-Antes de executar o projeto, é necessário possuir:
+Antes de executar o projeto, é necessária a instalação:
+
+```bash
+pip install flask
+```
+
+```bash 
+pip install pygad
+```
 
 ## Execução: 
 
