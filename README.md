@@ -36,12 +36,12 @@ Antes de executar o projeto, é necessário possuir:
 
 ## Execução: 
 
-** Execução sem a interface: **
+Execução sem a interface: 
 ```bash
 python main.py
 ```
 
-** Execução utilizando interface gráfica: **
+Execução utilizando interface gráfica: 
 ```bash
 python app.py
 ```
