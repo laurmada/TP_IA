@@ -25,6 +25,23 @@ def main():
     print("\nGinásios selecionados:")
     for ginasio in ginasios_selecionados:
         print(f"  {ginasio.nome} — {ginasio.tipo}")
+    
+    time, fitness = executar_genetico(pokemons, ginasios_selecionados)
+
+    print("\nMelhor time gerado:")
+    for pokemon in time:
+        print(f"  {pokemon.nome} — {pokemon.tipos}")
+
+    print(f"\nFitness: {fitness}")
+
+
+    for ginasio in ginasios_selecionados:
+        tem_vantagem = any(
+            vantagem(tipo, ginasio.tipo) == 2
+            for p in time for tipo in p.tipos
+        )
+        if not tem_vantagem:
+            print(f"  Sem cobertura: {ginasio.nome} ({ginasio.tipo})")
 
 if __name__ == "__main__":
     main()

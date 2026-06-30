@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Time Pokémon</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f4f4f0;
+      color: #2c2c2a;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #5f5e5a;
+      margin-bottom: 1.5rem;
+    }
+
+    .controls {
+      background: #ebebe5;
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .controls label {
+      font-size: 14px;
+      color: #5f5e5a;
+    }
+
+    select {
+      height: 36px;
+      border-radius: 8px;
+      border: 0.5px solid #b4b2a9;
+      padding: 0 8px;
+      font-size: 14px;
+    }
+
+    button {
+      background: #3c3489;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .section-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: #5f5e5a;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin-bottom: 1.5rem;
+    }
+
+    .pokemon-card {
+      background: #fff;
+      border: 0.5px solid #d3d1c7;
+      border-radius: 12px;
+      padding: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .pokemon-img {
+      width: 64px;
+      height: 64px;
+      image-rendering: pixelated;
+    }
+
+    .pokemon-name {
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+
+    .types-row {
+      display: flex;
+      gap: 4px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .type-badge {
+      font-size: 10px;
+      padding: 2px 7px;
+      border-radius: 20px;
+      font-weight: 500;
+      background: #d3d1c7;
+      color: #2c2c2a;
+      text-transform: capitalize;
+    }
+
+    .fitness-box {
+      background: #ebebe5;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    .fitness-box strong {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .ginasio-card {
+      background: #fff;
+      border: 0.5px solid #d3d1c7;
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 12px;
+    }
+
+    .ginasio-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .ginasio-titulo {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .ginasio-tipo {
+      font-size: 12px;
+      color: #5f5e5a;
+      text-transform: capitalize;
+    }
+
+    .resultado-badge {
+      font-size: 12px;
+      font-weight: 500;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+
+    .resultado-vitoria {
+      background: #eaf3de;
+      color: #27500a;
+    }
+
+    .resultado-empate {
+      background: #faeeda;
+      color: #633806;
+    }
+
+    .resultado-derrota {
+      background: #fcebeb;
+      color: #501313;
+    }
+
+    .scores-row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+
+    .scores-row span {
+      color: #5f5e5a;
+    }
+
+    .scores-row strong {
+      color: #2c2c2a;
+      font-weight: 500;
+    }
+
+    .ginasio-pokemons {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .ginasio-pokemon-mini {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #f4f4f0;
+      border-radius: 20px;
+      padding: 4px 10px 4px 4px;
+    }
+
+    .ginasio-pokemon-mini img {
+      width: 28px;
+      height: 28px;
+      image-rendering: pixelated;
+    }
+
+    .ginasio-pokemon-mini span {
+      font-size: 12px;
+      text-transform: capitalize;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 2rem;
+      color: #5f5e5a;
+      font-size: 14px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Gerador de time Pokémon</h1>
+
+    <div class="controls">
+      <label for="qtd-ginasios">Ginásios</label>
+      <select id="qtd-ginasios">
+        <option value="0">Aleatório</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      <button id="btn-gerar" onclick="gerarTime()">Gerar time</button>
+    </div>
+
+    <div id="resultado" class="hidden">
+      <p class="section-label">Melhor time gerado</p>
+      <div class="team-grid" id="team-grid"></div>
+
+      <div class="fitness-box">
+        <span>Score de fitness</span>
+        <strong id="fitness-valor">-</strong>
+      </div>
+
+      <p class="section-label">Resultado por ginásio</p>
+      <div id="ginasios-list"></div>
+    </div>
+
+    <div id="loading" class="loading hidden">
+      Rodando o algoritmo genético, aguarde...
+    </div>
+  </div>
+
+  <script>
+    function spriteUrl(id) {
+      return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
+    }
+
+    function resultadoClasse(resultado) {
+      if (resultado === "Vitória") return "resultado-vitoria";
+      if (resultado === "Empate") return "resultado-empate";
+      return "resultado-derrota";
+    }
+
+    async function gerarTime() {
+      const qtd = parseInt(document.getElementById("qtd-ginasios").value);
+      const btn = document.getElementById("btn-gerar");
+      const resultado = document.getElementById("resultado");
+      const loading = document.getElementById("loading");
+
+      btn.disabled = true;
+      resultado.classList.add("hidden");
+      loading.classList.remove("hidden");
+
+      try {
+        const response = await fetch("/gerar-time", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ quantidade: qtd })
+        });
+
+        const data = await response.json();
+
+        const teamGrid = document.getElementById("team-grid");
+        teamGrid.innerHTML = data.time.map(p => `
+      <div class="pokemon-card">
+        <img class="pokemon-img" src="${spriteUrl(p.id)}" alt="${p.nome}">
+        <span class="pokemon-name">${p.nome}</span>
+        <div class="types-row">
+          ${p.tipos.map(t => `<span class="type-badge">${t}</span>`).join("")}
+        </div>
+      </div>
+    `).join("");
+
+        document.getElementById("fitness-valor").textContent = data.fitness.toFixed(2);
+
+        const ginasiosList = document.getElementById("ginasios-list");
+        ginasiosList.innerHTML = data.ginasios.map(g => `
+      <div class="ginasio-card">
+        <div class="ginasio-header">
+          <div>
+            <div class="ginasio-titulo">${g.nome}</div>
+            <div class="ginasio-tipo">${g.tipo}</div>
+          </div>
+          <span class="resultado-badge ${resultadoClasse(g.resultado)}">${g.resultado}</span>
+        </div>
+        <div class="scores-row">
+          <span>Score do time: <strong>${g.score_time.toFixed(2)}</strong></span>
+          <span>Score do ginásio: <strong>${g.score_ginasio.toFixed(2)}</strong></span>
+        </div>
+        <div class="ginasio-pokemons">
+          ${g.pokemons.map(p => `
+            <div class="ginasio-pokemon-mini">
+              <img src="${spriteUrl(p.id)}" alt="${p.nome}">
+              <span>${p.nome}</span>
+            </div>
+          `).join("")}
+        </div>
+      </div>
+    `).join("");
+
+        resultado.classList.remove("hidden");
+      } catch (erro) {
+        alert("Erro ao gerar o time. Verifique se o servidor está rodando.");
+        console.error(erro);
+      } finally {
+        btn.disabled = false;
+        loading.classList.add("hidden");
+      }
+    }
+  </script>
+</body>
+
+</html>
