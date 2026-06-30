@@ -36,18 +36,6 @@ Antes de executar o projeto, é necessário possuir:
 
 ## Python
 
-Instale o Python 3 através do site oficial:
-
-https://www.python.org/
-
-Verifique a instalação:
-
 ```bash
-python --version
-
-pip install -r requirements.txt
-
-
-Execução utilizando interface gráfica
-
-python interface.py
+Execução sem a interface: python main.py 
+Execução utilizando interface gráfica : python app.py
