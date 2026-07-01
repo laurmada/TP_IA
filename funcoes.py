@@ -194,10 +194,7 @@ def executar_algoritmo_genetico(pokemons, ginasios):
 
         for ginasio in ginasios:
             score_time_gerado = score_time_vs_ginasio(time, ginasio)
-            if score_time_gerado == -1000:
-                score_total -= 500
-            else:
-                score_total += score_time_gerado
+            score_total += score_time_gerado
 
         score_total += bonus_cobertura(time, ginasios)
         score_total -= penalidade_lendarios(time)
@@ -229,7 +226,7 @@ def executar_algoritmo_genetico(pokemons, ginasios):
         score_ginasio = poder_total_ginasio(melhor_time, ginasio)
 
         if score_time == -1000:
-            print(f" Ginásio {ginasio.nome} ({ginasio.tipo}): DERROTA! O time caiu aqui.")
+            print(f" Ginásio {ginasio.nome} ({ginasio.tipo}): DERROTA!")
         else:
             resultado = resultado_provavel(score_time, score_ginasio)
             print(f" Ginásio {ginasio.nome} ({ginasio.tipo}): {resultado}")
