@@ -1,3 +1,4 @@
+# classe que representa os pokemons
 class Pokemon:
     def __init__(
         self,
@@ -12,7 +13,7 @@ class Pokemon:
         self.tipos = tipos
         self.atributos = atributos
 
-       
+# classe que representa os ginasios       
 class Ginasio:
     def __init__(
         self,
