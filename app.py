@@ -5,15 +5,19 @@ from funcoes import (
     resultado_provavel
 )
 
+# inicializa o servidor Flask
 app = Flask(__name__)
 
+# carrega os dados uma unica vez ao iniciar o servidor
 pokemons = carregar_pokemons()
 ginasios = carregar_ginasios()
 
+# rota principal da interface
 @app.route("/")
 def index():
     return render_template("index.html")
 
+# rota que recebe a requisicao da interface e retorna o time gerado
 @app.route("/gerar-time", methods=["POST"])
 def gerar_time():
     dados = request.json
