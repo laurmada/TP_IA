@@ -18,30 +18,33 @@ def main():
     for atributo, valor in pokemon.atributos.items():
         print(f"  {atributo}: {valor}")
     """
-    quantidade = int(input("Quantos ginásios? (0 para aleatório): "))
-    
-    ginasios_selecionados = selecionar_ginasios(ginasios, quantidade)
+    quantidade = int(input("Quantos ginásios? (0 para aleatório, -1 para experimentos): "))
 
-    print("\nGinásios selecionados:")
-    for ginasio in ginasios_selecionados:
-        print(f"  {ginasio.nome} — {ginasio.tipo}")
-    
-    time, fitness = executar_algoritmo_genetico(pokemons, ginasios_selecionados)
+    if quantidade == 10:
+        rodar_experimentos(pokemons, ginasios)
+    #else:
+        #ginasios_selecionados = selecionar_ginasios(ginasios, quantidade)
 
-    print("\nMelhor time gerado:")
+    #print("\nGinásios selecionados:")
+    #for ginasio in ginasios_selecionados:
+        #print(f"  {ginasio.nome} — {ginasio.tipo}")
+    
+    #time, fitness = executar_algoritmo_genetico(pokemons, ginasios_selecionados)
+
+    """print("\nMelhor time gerado:")
     for pokemon in time:
         print(f"  {pokemon.nome} — {pokemon.tipos}")
 
-    print(f"\nFitness: {fitness}")
+    print(f"\nFitness: {fitness}")"""
 
 
-    for ginasio in ginasios_selecionados:
+    """for ginasio in ginasios_selecionados:
         tem_vantagem = any(
             vantagem(tipo, ginasio.tipo) == 2
             for p in time for tipo in p.tipos
         )
         if not tem_vantagem:
-            print(f"  Sem cobertura: {ginasio.nome} ({ginasio.tipo})")
+            print(f"  Sem cobertura: {ginasio.nome} ({ginasio.tipo})")"""
 
 if __name__ == "__main__":
     main()

@@ -104,9 +104,9 @@ def vantagem(pokemon_time, pokemon_ginasio):
 # calcula a vantage de tipo geral do time contra o time do ginasio   
 def calcular_vantagem(pokemon_time, pokemon_ginasio):
     valor_total = 1
-    for tipo_atk in pokemon_time.tipos:
-        for tipo_def in pokemon_ginasio.tipos:
-            valor_total *= vantagem(tipo_atk, tipo_def)
+    for tipo_ataque in pokemon_time.tipos:
+        for tipo_defesa in pokemon_ginasio.tipos:
+            valor_total *= vantagem(tipo_ataque, tipo_defesa)
     return valor_total
 
 # define um bonus por cobertura de tipo 
@@ -115,8 +115,8 @@ def bonus_cobertura(time, ginasios):
 
     for ginasio in ginasios:
         for pokemon_ginasio in ginasio.pokemons:
-            for meu_pokemon in time:
-                if calcular_vantagem(meu_pokemon, pokemon_ginasio) > 1:
+            for pokemon_gerado in time:
+                if calcular_vantagem(pokemon_gerado, pokemon_ginasio) > 1:
                     cobertura += 1
                     break
     return cobertura * 500
@@ -152,8 +152,8 @@ def valor_total_batalha(pokemon_time, pokemon_ginasio):
 # penalidade para evitar pokemos lendarios que sao mais fortes
 def penalidade_lendarios(time):
     lendarios = {"mewtwo", "mew", "articuno", "zapdos", "moltres"}
-    count = sum(1 for p in time if p.nome in lendarios)
-    return count * 2000
+    contador = sum(1 for p in time if p.nome in lendarios)
+    return contador * 2000
 
 # calcula o score total do time gerado contra um ginasio especifico
 def score_time_vs_ginasio(time, ginasio):
@@ -162,12 +162,12 @@ def score_time_vs_ginasio(time, ginasio):
 
     for pokemon_ginasio in ginasio.pokemons:
         for pokemon_time_gerado in time:
-            resultado_combate = valor_total_batalha(pokemon_time_gerado, pokemon_ginasio)
+            score_combate = valor_total_batalha(pokemon_time_gerado, pokemon_ginasio)
 
-            if resultado_combate == -1000:
+            if score_combate == -1000:
                 return -1000
 
-            score_total += resultado_combate
+            score_total += score_combate
 
     return score_total / quantidade_inimigos
 
@@ -177,12 +177,12 @@ def poder_total_ginasio(time, ginasio):
     quantidade_pokemons_time = len(time)
 
     for pokemon_ginasio in ginasio.pokemons:
-        for meu_pokemon in time:
-            vantagem_ginasio = calcular_vantagem(pokemon_ginasio, meu_pokemon)
-            vantagem_time = calcular_vantagem(meu_pokemon, pokemon_ginasio)
+        for pokemon_gerado in time:
+            vantagem_ginasio = calcular_vantagem(pokemon_ginasio, pokemon_gerado)
+            vantagem_time = calcular_vantagem(pokemon_gerado, pokemon_ginasio)
             # * 2 para o ataque ter um peso maior que os pontos de vida do pokemon
             poder_ginasio = poder_pokemon(pokemon_ginasio) * vantagem_ginasio * 2
-            dano_no_ginasio = dano_recebido(meu_pokemon, pokemon_ginasio, vantagem_time)
+            dano_no_ginasio = dano_recebido(pokemon_gerado, pokemon_ginasio, vantagem_time)
             hp_ginasio_restante = pokemon_ginasio.atributos["pontos_de_vida"] - dano_no_ginasio
 
             if hp_ginasio_restante <= 0:
