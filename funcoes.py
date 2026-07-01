@@ -23,7 +23,6 @@ vantagens_forte_contra = {
     "fantasma": ["psiquico", "fantasma"],
     "dragao": ["dragao"],
     "aco": ["gelo", "pedra", "fada"],
-    "fada": ["lutador", "dragao", "noturno"]
 }
 
 # carrega o json dos pokemons e armazena em uma lista
@@ -145,8 +144,6 @@ def valor_total_batalha(pokemon_time, pokemon_ginasio):
 
     pontos_de_vida_restante = pokemon_time.atributos["pontos_de_vida"] - dano
 
-    if pontos_de_vida_restante <= 0:
-        return -1000
     return poder_time_gerado + pontos_de_vida_restante
 
 # penalidade para evitar pokemos lendarios que sao mais fortes
@@ -163,10 +160,6 @@ def score_time_vs_ginasio(time, ginasio):
     for pokemon_ginasio in ginasio.pokemons:
         for pokemon_time_gerado in time:
             score_combate = valor_total_batalha(pokemon_time_gerado, pokemon_ginasio)
-
-            if score_combate == -1000:
-                return -1000
-
             score_total += score_combate
 
     return score_total / quantidade_inimigos
@@ -227,7 +220,7 @@ def executar_algoritmo_genetico(pokemons, ginasios):
     solution, fitness, _ = ga.best_solution()
     melhor_time = [pokemons[i] for i in solution]
 
-    print(" RELATÓRIO DO MELHOR TIME ENCONTRADO")
+    '''print(" RELATÓRIO DO MELHOR TIME ENCONTRADO")
     for i, p in enumerate(melhor_time, 1):
         print(f"  {i}. {p.nome} - Tipos: {p.tipos}")
 
@@ -247,6 +240,6 @@ def executar_algoritmo_genetico(pokemons, ginasios):
 
     print(" RESUMO DE BÔNUS E PENALIDADES:")
     print(f" Bônus de Cobertura de Tipos:  +{valor_cobertura}")
-    print(f" Penalidade de Lendários:     -{valor_lendarios}")
+    print(f" Penalidade de Lendários:     -{valor_lendarios}")'''
 
     return melhor_time, fitness
