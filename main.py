@@ -2,6 +2,7 @@ from funcoes import *
 import time as time_module
 
 def main(): 
+    # carrega json dos pokemons e times
     pokemons = carregar_pokemons()
     ginasios = carregar_ginasios()
 
@@ -13,6 +14,7 @@ def main():
     for ginasio in ginasios_selecionados:
         print(f"  {ginasio.nome} — {ginasio.tipo}")
 
+    # chama o algoritmo genetico com a quantidade de ginasios selecionados e lista de pokemons 
     melhor_time, fitness = executar_algoritmo_genetico(pokemons, ginasios_selecionados)
 
     print("\nMelhor time gerado:")
