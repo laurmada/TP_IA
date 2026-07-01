@@ -2,7 +2,6 @@ import json
 import os
 import random
 import pygad
-#import pyGAD, USAR ESSA BIBLIOTECA PARA FACILITAR A IMPLEMENTACAO DO ALGORITMO GENETICO
 from modelos import Pokemon, Ginasio
 
 # dicionario para deteminar quais pokemons sao fortes contra quais
@@ -201,6 +200,7 @@ def executar_algoritmo_genetico(pokemons, ginasios):
 
         return float(score_total)
 
+    # configuracao do algoritmo genetico usando a biblioteca pygad
     ga = pygad.GA(
         num_generations=80,
         num_parents_mating=5,
@@ -217,7 +217,7 @@ def executar_algoritmo_genetico(pokemons, ginasios):
     solution, fitness, _ = ga.best_solution()
     melhor_time = [pokemons[i] for i in solution]
 
-    '''print(" RELATÓRIO DO MELHOR TIME ENCONTRADO")
+    '''print(" DEBUG DO MELHOR TIME ENCONTRADO")
     for i, p in enumerate(melhor_time, 1):
         print(f"  {i}. {p.nome} - Tipos: {p.tipos}")
 
@@ -235,7 +235,7 @@ def executar_algoritmo_genetico(pokemons, ginasios):
     valor_cobertura = bonus_cobertura(melhor_time, ginasios)
     valor_lendarios = penalidade_lendarios(melhor_time)
 
-    print(" RESUMO DE BÔNUS E PENALIDADES:")
+    print(" RESUMO DE BONUS E PENALIDADES:")
     print(f" Bônus de Cobertura de Tipos:  +{valor_cobertura}")
     print(f" Penalidade de Lendários:     -{valor_lendarios}")'''
 
